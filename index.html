@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced 3D Model Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="viewer-container">
+      <div id="model-container"></div>
+
+      <div id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <div id="loading-text">Loading model...</div>
+        <div id="loading-progress">0%</div>
+      </div>
+
+      <div id="viewer-controls" class="ui-panel">
+        <div class="control-group">
+          <button id="reset-view" title="Reset View">
+            <i class="fa-solid fa-arrows-to-circle"></i>
+          </button>
+          <button id="toggle-fullscreen" title="Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="toggle-wireframe" title="Wireframe">
+            <i class="fa-solid fa-border-all"></i>
+          </button>
+          <button id="toggle-grid" title="Grid">
+            <i class="fa-solid fa-grip"></i>
+          </button>
+          <button id="toggle-axes" title="Axes">
+            <i class="fa-solid fa-crosshairs"></i>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="toggle-environment" title="Environment">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <div class="dropdown">
+            <button id="lighting-presets" title="Lighting Presets">
+              <i class="fa-solid fa-lightbulb"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#" data-preset="default">Default</a>
+              <a href="#" data-preset="studio">Studio</a>
+              <a href="#" data-preset="outdoor">Outdoor</a>
+              <a href="#" data-preset="night">Night</a>
+            </div>
+          </div>
+          <button id="toggle-light-bulb" title="Light Bulb">
+            <i class="fa-solid fa-lightbulb"></i>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="toggle-white-env" title="White Environment">
+            <i class="fa-regular fa-clone"></i>
+          </button>
+          <button id="toggle-shadow-plane" title="Shadow Plane">
+            <i class="fa-solid fa-square-full"></i>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="scale-down" title="Scale Down">
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+          </button>
+          <button id="scale-up" title="Scale Up">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
+          <button id="scale-reset" title="Reset Scale">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <div id="light-intensity-control">
+            <label for="light-intensity">Intensity:</label>
+            <input
+              type="range"
+              id="light-intensity"
+              min="0"
+              max="2"
+              step="0.1"
+              value="1"
+            />
+            <span id="light-intensity-value">1.0</span>
+          </div>
+          <div class="color-picker-container">
+            <label for="env-color-picker">Env Color:</label>
+            <input
+              type="color"
+              id="env-color-picker"
+              value="#ffffff"
+              title="Environment Color"
+            />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="dropdown">
+            <button id="graphics-presets" title="Graphics Presets">
+              <i class="fa-solid fa-chart-line"></i>
+            </button>
+            <div class="dropdown-content graphics-dropdown-content">
+              <a href="#" data-preset="high" class="active">High Quality</a>
+              <a href="#" data-preset="low">Low Quality</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="stats-panel" class="ui-panel">
+        <div class="stat-item">
+          <span class="stat-label">Triangles:</span>
+          <span id="triangle-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Vertices:</span>
+          <span id="vertex-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Textures:</span>
+          <span id="texture-count">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/DRACOLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/TransformControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/utils/BufferGeometryUtils.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
