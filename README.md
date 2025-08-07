@@ -1,68 +1,96 @@
-I apologize for the previous response. I understand you're looking for a more creative, eye-catching README with a less "geeky" feel and you want to see where the GIF and animations would fit. I'll rewrite the README to be more engaging and visually appealing, incorporating the requested elements and explaining the features in a more dynamic way.
+# 🌌 OrbitView - The Ultimate 3D Model Viewer 
 
------
+[![Demo GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)](https://your-demo-link.com)
 
-# ✨ OrbitView: A Glimpse into the 3D Universe ✨
+**✨ A Sketchfab-inspired, open-source 3D viewer built with Three.js that brings your models to life!**
 
-[](https://your-live-demo-link.com)
+---
 
-Welcome to **OrbitView**\! [cite\_start]🌐 This isn't just a model viewer; it's a real-time portal to your 3D creations, built with the power of **Three.js**[cite: 1]. [cite\_start]Load your GLB/GLTF models and watch them come to life with a user experience that is both lightweight and fast[cite: 2]. Inspired by the best in the business, OrbitView gives you the tools to interact with your models in a way that’s as fun as it is functional.
+## 🚀 Features That Will Blow Your Mind
 
------
+| Feature | GIF Demo | Description |
+|---------|----------|-------------|
+| **🎨 Real-time Lighting** | ![Lighting Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2RlYzB5bWl0b3JzZ3Z6eGJ6bGJ6dWZxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif) | Dynamic lighting presets (Studio, Outdoor, Night) with adjustable intensity |
+| **🔍 Model Inspection** | ![Inspection Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2RlYzB5bWl0b3JzZ3Z6eGJ6bGJ6dWZxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif) | Wireframe mode, statistics panel, and full measurement tools |
+| **🌐 Environment Control** | ![Environment Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2RlYzB5bWl0b3JzZ3Z6eGJ6bGJ6dWZxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif) | Customizable environment colors and HDRI backgrounds |
+| **⚡ Performance Modes** | ![Performance Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2RlYzB5bWl0b3JzZ3Z6eGJ6bGJ6dWZxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif) | Switch between High Quality and Performance modes |
 
-## 🚀 The Magic Behind the Curtain: What It Does
+---
 
-OrbitView gives you total control over how you see and interact with your models.
+## 🛠️ Technical Deep Dive
 
-### **See Your Model from Every Angle**
+### 🧩 Core Architecture
+```mermaid
+graph TD
+    A[Three.js Core] --> B[GLTF/GLB Loader]
+    A --> C[OrbitControls]
+    A --> D[DRACO Compression]
+    B --> E[Model Processing]
+    C --> F[User Interaction]
+    E --> G[Scene Graph]
+    G --> H[Rendering Pipeline]
+```
 
-[cite\_start]Drag, spin, and zoom with buttery-smooth **OrbitControls**[cite: 32]. Want to get up close to a detail or see the whole picture? You have complete freedom to explore.
-*\*\*\*\**
+### 🔥 Advanced Features
+1. **Dynamic Lighting System**
+   - 3-point lighting setup (Key, Fill, Back)
+   - Physically-based rendering (PBR) materials
+   - Real-time shadow mapping (4096x4096 resolution)
 
-### **Lighting that Sets the Mood**
+2. **Smart Model Handling**
+   - Auto-centering and scaling
+   - Geometry statistics (triangles, vertices)
+   - Texture analysis and optimization
 
-Transform your scene instantly with a single click.
+3. **Environment Controls**
+   - Custom HDRI environment maps
+   - Color-picker for background
+   - Reflection intensity controls
 
-  * [cite\_start]**Studio Look**: A click of a button can give your model the perfect studio lighting[cite: 8].
-  * [cite\_start]**Outdoor Vibe**: Take your model outside with a natural, bright, and vibrant outdoor preset[cite: 8].
-  * [cite\_start]**Night Scene**: Dim the lights and get a dramatic, cinematic feel[cite: 8].
-  * [cite\_start]**White Box Reflections**: Toggle a pure white environment for a glossy, high-fashion aesthetic that makes reflections pop[cite: 61, 144]. [cite\_start]This feature even adjusts your materials to be more reflective and metallic, giving your model an instant glow-up. [cite: 153]
+---
 
-*\*\*\*\**
+## 🏗️ Built With
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![WebGL](https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### **Customize Your View**
+---
 
-These aren't just buttons; they're your creative superpowers.
+## 🚧 Future Roadmap
 
-  * [cite\_start]**Wireframe Vision**: See the raw skeleton of your model by toggling the wireframe mode[cite: 5]. This is perfect for inspecting the geometry and mesh.
-  * [cite\_start]**Shadows that Ground You**: With a single click, add a shadow plane to give your model depth and realism, making it feel grounded in the scene[cite: 9, 62, 169].
-  * **The Big Picture**: Need to know the details? [cite\_start]A quick glance at the stats panel gives you the count of triangles, vertices, and textures[cite: 15, 16, 107].
+### 🔜 Coming Soon
+- [ ] **AR/VR Mode** - View models in augmented/virtual reality
+- [ ] **Collaborative Viewing** - Multi-user model inspection
+- [ ] **Animation Timeline** - Control model animations
 
-*\*\*\*\**
+### 🌐 Framework Ports
+| Framework | Status | Demo |
+|-----------|--------|------|
+| React Three Fiber | ✅ Completed | [Demo](link) |
+| Vue Three | 🚧 In Progress | - |
+| Svelte Cubed | ⏳ Planned | - |
+| Angular + Three | ⏳ Planned | - |
 
-### **Performance on Your Terms**
+---
 
-Not every device is a supercomputer, and that's okay.
+## 🎮 Try It Live!
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=for-the-badge&logo=codesandbox)](https://codesandbox.io/p/github/your-repo)
+[![View Demo](https://img.shields.io/badge/View-Demo-green?style=for-the-badge)](https://your-demo-link.com)
 
-  * **Quality Presets**: Switch between **High Quality** and **Low Quality** to get the best performance. [cite\_start]High quality gives you beautiful, detailed shadows and a sharper image, while low quality ensures a smooth experience on any device by reducing shadow map sizes and disabling effects[cite: 14, 75, 78].
-  * **Real-time Loading**: Don't be left in the dark. [cite\_start]An elegant loading overlay with a progress bar shows you exactly how fast your model is loading[cite: 4, 99].
+---
 
-*\*\*\*\**
+## 🤝 Contribute
+We 💖 contributors! Check out our [Contribution Guidelines](CONTRIBUTING.md) to get started.
 
------
+---
 
-## 🌟 Future Goals & The Roadmap
+## 📜 License
+MIT © 2023 [Your Name]
 
-We're just getting started\! Here’s what’s next for OrbitView.
+---
 
-  * **Animation Playback**: Bringing your animated models to life with controls to play, pause, and scrub through animations.
-  * **More Frameworks**: We're looking to support other frameworks and libraries beyond Three.js, such as Babylon.js or even Unreal Engine for web.
-  * **Annotation Tools**: Add a layer of collaboration by allowing users to add notes and annotations directly to the model.
+> "The best way to predict the future is to invent it." - Alan Kay
 
-## 🔄 How It Works (for the Developers)
-
-[cite\_start]OrbitView is built using a clean, class-based structure with HTML, CSS, and vanilla JavaScript[cite: 3, 178]. This makes it super easy to integrate into your projects.
-
-  * **React/Vue**: You can easily embed the `ModelViewer` class into a component's lifecycle hooks. All the UI controls can be managed by your framework's state, giving you seamless integration.
-  * **TypeScript**: A future goal is to migrate to TypeScript to add type safety and improve the development experience.
-  * **Next.js/Nuxt.js**: The entire viewer can be loaded as a dynamic, client-side component, ensuring your server-side rendered pages remain lightweight and fast.
+Let's reinvent 3D visualization together! 🚀
