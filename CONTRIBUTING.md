@@ -1,119 +1,37 @@
-Here's a comprehensive **CONTRIBUTING.md** file for OrbitView with animated visuals and clear guidelines:
+# 🪐 OrbitView Contribution Guidelines
 
-```markdown
-# 🛠️ Contribution Guidelines
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif" width="400">
+  
+  [![PRs Welcome](https://img.shields.io/badge/PRs-WELCOME-FF69B4.svg?style=for-the-badge&logo=github&logoColor=white)](https://makeapullrequest.com)
+  [![Open Source Love](https://img.shields.io/badge/OPEN%20SOURCE-♥-red.svg?style=for-the-badge)](https://github.com/yourusername/OrbitView)
+</div>
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/yourusername/OrbitView/pulls)
-[![Open Issues](https://img.shields.io/github/issues/yourusername/OrbitView?color=red&style=for-the-badge)](https://github.com/yourusername/OrbitView/issues)
+## 🌌 Welcome Space Cadets!
 
-![Contribution GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif)
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif" width="300">
+</div>
 
-We're thrilled you want to contribute to OrbitView! Follow this guide to make the process smooth for everyone.
+Ready to help build the coolest 3D viewer in the galaxy? Follow this guide to warp speed through contributions!
 
-## 🚀 Quick Start
-
-1. **Fork** the repository
-2. **Clone** your fork:
-   ```bash
-   git clone https://github.com/yourusername/OrbitView.git
-   ```
-3. **Branch** off `main`:
-   ```bash
-   git checkout -b feat/amazing-feature
-   ```
-4. **Commit** your changes:
-   ```bash
-   git commit -m "feat: add amazing feature"
-   ```
-5. **Push** to your fork:
-   ```bash
-   git push origin feat/amazing-feature
-   ```
-6. Open a **Pull Request**
-
-![Git Flow](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)
-
-## 🧑‍💻 Development Setup
-
-### Prerequisites
-- Node.js 16+
-- npm/yarn
-- Three.js knowledge
-
-### Installation
 ```bash
+# 🚀 Initiate Launch Sequence
+git clone https://github.com/yourusername/OrbitView.git
+cd OrbitView
 npm install
 npm run dev
 ```
 
-![Development GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif)
-
-## 📝 Contribution Types
-
-### 🐛 Bug Reports
-```markdown
-**Description**: 
-**Steps to Reproduce**:
-1. 
-2. 
-**Expected Behavior**:
-**Actual Behavior**:
-**Screenshots**:
-```
-
-### ✨ Feature Requests
-```markdown
-**Is your feature request related to a problem?** 
-**Describe the solution**:
-**Alternative solutions**:
-**Additional context**:
-```
-
-### 🎨 UI/UX Improvements
-Attach mockups or Figma links!
-
-![Design Process](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)
-
-## 🧪 Testing Guidelines
-Run tests before submitting:
+🛸 Contribution Pathways
+🔧 Fix Bugs
+<div align="center"> <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif" width="200"> </div>
 ```bash
-npm test
+# 1. 🕵️ Search existing issues
+2. 🐛 Create new bug report with:
+   - Clear reproduction steps
+   - Expected vs actual behavior
+   - Environment details
+   - Screenshots/GIFs
+3. 🔧 Fix it yourself (see below)
 ```
-
-## 📜 Code Standards
-- Follow Three.js best practices
-- Use semantic commit messages:
-  - `feat:` for new features
-  - `fix:` for bug fixes
-  - `docs:` for documentation
-  - `chore:` for maintenance
-
-## 🏆 Recognition
-All contributors get added to our [Hall of Fame](HALL_OF_FAME.md)!
-
-![Celebration GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW5xZ3V2a3FhY3Z3b3VxZ2V6Y2J6eGZ1NnR0dGJtYzBmZ3Z0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs4kI2X9h7eWQzt2/giphy.gif)
-
-## ❓ Need Help?
-Join our [Discord](https://discord.gg/yourlink) or open a discussion!
-
----
-
-✨ **Happy Coding!** Let's build the future of 3D visualization together!
-```
-
-Key features of this CONTRIBUTING.md:
-
-1. **Animated Visuals** - GIFs showing the contribution process
-2. **Clear Sections** - Separated by contribution type
-3. **Templates** - Ready-to-use issue/PR templates
-4. **Badges** - Visual indicators for PRs/issues
-5. **Recognition** - Hall of Fame for contributors
-6. **Community Links** - Discord/support channels
-
-The animated GIFs make it engaging while maintaining professional guidelines. You can replace the placeholder GIF links with actual recordings of:
-- The development process
-- Git workflow animations
-- UI improvement examples
-- Celebration animations for merged PRs
-
-Would you like me to suggest specific tools for creating these animated GIFs?
